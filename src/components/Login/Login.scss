@@ -1,0 +1,10 @@
+.login {
+  background: linear-gradient(142deg, rgba(181,210,255,1) 0%, rgba(147,151,255,1) 100%);
+  .error:empty:before {
+      content: "\00a0";
+    }
+  .button {
+    height: 3rem;
+    background-color: rgba(147,151,255,1);
+  }
+}
