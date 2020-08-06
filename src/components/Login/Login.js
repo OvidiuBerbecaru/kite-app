@@ -13,7 +13,7 @@ import { pathOr } from 'ramda';
 import React, { useState } from 'react';
 import { useForm } from 'react-hook-form';
 import { toast } from 'react-toastify';
-import { useAuth } from '../../auth/AuthProvider';
+import { useAuth } from '../../providers/AuthProvider';
 import { KiteLogo } from '../../assets/svgAssets';
 import PersonRoundedIcon from '@material-ui/icons/PersonRounded';
 import LockRoundedIcon from '@material-ui/icons/LockRounded';

@@ -1,0 +1,24 @@
+.navbar {
+  box-shadow: 0 4px 2px -2px #E5E5E5;
+
+  .logout {
+    font-size: 0.7rem;
+  }
+
+  .navbar-right { 
+    .name {
+      margin-right: 1rem;
+    }
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  .navbar{
+    .navbar-right{
+      flex-direction: column;
+      .name {
+        margin-right: 0;
+      }
+    }
+  }
+}

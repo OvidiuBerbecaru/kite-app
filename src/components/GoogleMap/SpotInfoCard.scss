@@ -1,0 +1,15 @@
+.spot-info-card {
+  width: 20vw;
+}
+
+@media only screen and (max-width: 1024px) {
+  .spot-info-card {
+    width: 60vw;
+  }
+}
+
+@media only screen and (max-width: 700px) {
+  .spot-info-card {
+    width: 80vw;
+  }
+}

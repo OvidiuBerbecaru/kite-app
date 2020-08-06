@@ -4,7 +4,8 @@ import 'react-toastify/dist/ReactToastify.css';
 import './App.scss';
 import Main from './components/Main/Main';
 import Login from './components/Login/Login';
-import { useAuth } from './auth/AuthProvider';
+import { useAuth } from './providers/AuthProvider';
+import { RefetchProvider } from './providers/RefetchProvider';
 
 const App = () => {
   const { isLoggedIn } = useAuth();
@@ -13,11 +14,9 @@ const App = () => {
       <ToastContainer
         pauseOnHover
         draggablePercent={20}
-        bodyClassName="default-toast-body"
-        progressClassName="default-toast-progress"
-        autoClose={5000}
+        autoClose={2500}
       />
-      {isLoggedIn ? <Main /> : <Login />}
+      {isLoggedIn ? <RefetchProvider><Main /></RefetchProvider> : <Login />}
     </div>
   );
 };

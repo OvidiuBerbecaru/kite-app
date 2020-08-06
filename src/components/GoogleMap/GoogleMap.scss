@@ -1,0 +1,44 @@
+.google-map {
+  width: 90%;
+  height: 50vh;
+  margin-top: 2rem;
+
+  .spinner {
+    z-index: 1000;
+    top: 50%;
+    left: 50%;
+  }
+
+  .detailes-card {
+    z-index: 1000;
+    top: 5%;
+    left: calc(50% - 10vw);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  .google-map {
+    height: 70vh;
+    margin-top: 1rem;
+
+    .detailes-card {
+      top: 5%;
+      left: calc(50% - 30vw);
+    }
+  }
+}
+
+@media only screen and (max-width: 720px) {
+  .google-map {
+    height: 80vh;
+
+    .detailes-card {
+      left: calc(50% - 40vw);
+    }
+  }
+}
+
+.locationPin {
+  cursor: pointer;
+}
